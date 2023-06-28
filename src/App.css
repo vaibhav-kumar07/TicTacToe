@@ -1,0 +1,30 @@
+:root{
+    padding: 0;
+    margin: 0;
+}
+
+
+.boardContainer{
+    width: 100px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+
+}
+
+.board-row{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.square{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 20px;
+    color:rgb(99, 90, 90);
+    text-align: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
