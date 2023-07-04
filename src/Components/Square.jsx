@@ -5,9 +5,11 @@
 
 
 export default function  Square(props) {
+  
+  console.log("in square component ",props.value);
   return (
     <div className='square' onClick={props.Click} >
-        <h5>{props.value}</h5>
+        <h1>{props.value}</h1>
     </div>
   )
 }

@@ -1,15 +1,28 @@
+
+
 :root{
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #F9E2AF; */
+    /* gap: 10px; */
 }
 
 
 .boardContainer{
-    width: 100px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
-
+    display: flex;
+    width: 55vw;
+     min-width: 480px;
+     border-radius: 10px;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+     padding: 1.5rem;
+     background-color:#FFB84C;
+   
 }
 
 .board-row{
@@ -19,12 +32,113 @@
 }
 
 .square{
-    width: 50px;
-    height: 50px;
+    width: 8rem;
+    height: 7rem;
     border-radius: 10px;
+    align-self: center;
     margin: 10px;
     font-size: 20px;
-    color:rgb(99, 90, 90);
+    color:#545B77;
+    border:2px solid white;
+    background-color: #C1ECE4;
     text-align: center;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
+
+.square:hover{
+   cursor: pointer;
+}
+.title{
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    font-weight: 600;
+    margin: 15px 0 0 0;
+}
+.winnerbanner{
+    width: 55vw;
+    font-size: 5rem;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 10px;
+   background-color: #FFB84C;
+    
+}
+.btn{
+    mix-blend-mode: multiply;
+    display: block;
+    font-size: 3rem;
+    border: none;
+    padding: 2rem 2rem;
+    cursor: pointer;
+    background-color: #3AA6B9;
+    margin:10px 0 0 0  ;
+    color: white;
+  border-radius: 10px;
+
+}
+.winningplayer{
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    margin: 2rem;
+}
+
+.score{
+display: flex;
+width: 60vw;
+min-width: 480px;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.score>p{
+    font-size: 1.4rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px 3rem;
+    border-radius: 10px;
+    background-color:#FF9EAA;
+    color: white;
+    margin: 20px;
+}
+.playagain{
+    font-size: 3rem;
+    font-family: serif;
+    border: none;
+    background-color: #FF9EAA;
+    color: white;
+    border-radius: 10px;
+}
+.playagain:hover{
+    cursor: pointer;
+}
+.fullwindow{
+    display: flex;
+    flex-direction: column;
+}
+
+.winningwindow{
+    display: flex;
+    flex-direction: column;
+    /* box-shadow: 4px 4px coral, 6px 6px olive, 8px 8px dodgerblue; */
+
+}
+span{
+color: #545B77;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+  }
+  .winnerplayername {
+    display: block;
+    height: calc(100vh - 4rem);
+    width: 25.75rem;
+    margin: 2rem auto;
+    animation: shrink 2s cubic-bezier(0.65, 0, 0.35, 1) alternate infinite;
+    animation-delay: -1.3s;
+  }
+  
+  @keyframes shrink {
+    70%, 100% {height: calc(60vh - 4rem);} 
+  }

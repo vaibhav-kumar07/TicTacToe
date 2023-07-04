@@ -10,8 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "jsdom": "^22.1.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "say": "^0.16.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",
